@@ -1,0 +1,13 @@
+The "hero" of the game is the snowman. He spawns on the left hand side of window. I implemented his movement.
+I specifically used the "A" and "D" keys for left and right (not the arrows), and made sure not to implement 
+up and down since snowmen can't fly. To implement this feature, I created a function called OnUpdateCharacter 
+within the Winter.cpp file. This function takes in a Ground::Unit object and checks the m_State of the 
+character - depending on the key pressed. "A" means that m_State would be MOVE_LEFT, and so the function would 
+change the x coordinates of the snowman by -15. "D" means that m_State would be MOVE_RIGHT, and so the function 
+would change the x coordinates of the snowman by 15. If no key is pressed or if a key is released, the m_State 
+would be NOT_MOVING, so the x coordinates of the snowman would be changed by 0.
+
+Since the hero of the game is from the class Unit, I implemented a way for Unit objects to be drawn using the Renderer
+class. Within the Renderer.h and Renderer.cpp, I created a new Draw function with a parameter of a Unit object 
+instead of a Picture object. This function used the same implementation as the other Draw functions in Renderer.cpp,
+except it took the picture and coordinate attributes from the Unit object.

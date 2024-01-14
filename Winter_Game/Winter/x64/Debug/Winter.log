@@ -1,0 +1,6 @@
+﻿  Winter.cpp
+C:\Users\analo\OneDrive\Documents\GameEnginesClass\Winter\Ground\GroundApp.h(18,29): warning C4251: 'Ground::GroundApp::mFrameDuration': class 'std::chrono::duration<__int64,std::milli>' needs to have dll-interface to be used by clients of class 'Ground::GroundApp'
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.33.31629\include\__msvc_chrono.hpp(511): message : see declaration of 'std::chrono::duration<__int64,std::milli>'
+C:\Users\analo\OneDrive\Documents\GameEnginesClass\Winter\Ground\GroundApp.h(19,41): warning C4251: 'Ground::GroundApp::mNextFrameTime': class 'std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>' needs to have dll-interface to be used by clients of class 'Ground::GroundApp'
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.33.31629\include\__msvc_chrono.hpp(665): message : see declaration of 'std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>'
+  Winter.vcxproj -> C:\Users\analo\OneDrive\Documents\GameEnginesClass\Winter\x64\Debug\Winter.exe
